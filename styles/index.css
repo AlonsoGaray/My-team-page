@@ -114,6 +114,18 @@ footer {
   }
 }
 
+@media screen and (min-width: 940px) {
+  .card__person {
+    width: 305px;
+  }
+  .card__person__description {
+    top: 163px;
+  }
+  .card__person__img {
+    width: 205px;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .header {
     display: -webkit-box;
@@ -130,7 +142,6 @@ footer {
   }
   .card__person {
     width: 313px;
-    max-width: 313px;
   }
   .card__person__description {
     top: 165px;
