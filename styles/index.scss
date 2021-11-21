@@ -1,0 +1,156 @@
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'PT Sans', serif;;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1271px;
+  margin: auto;
+}
+
+.header {
+  margin: 30px 60px 0 10px;
+
+  &__h1 {
+    font-family: $secondary-font;
+    letter-spacing: -0.03em;
+    margin-left: 10px;
+  }
+
+  &__text {
+    margin: 35px 0 20px 10px;
+    font-family: $primary-font;
+    max-width: 440px;
+
+    &__h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  
+    &__p {
+      font-size: 14px;
+      margin-top: 7px;
+    }
+  }
+
+  
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  
+
+  &__person {
+    width: 150px;
+
+    &:nth-child(2n) {
+      margin-top: 50px
+    }
+
+    &__description {
+      font-family: $secondary-font;
+      font-size: 11px;
+      transform: rotate(-270deg);
+      right: -63px;
+      top: 84px;
+      position: relative;
+    }
+
+    &__img {
+      width: 130px
+    }
+
+    &__name {
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px
+}
+
+@media screen and (min-width: 450px) {
+  .card {
+    &__person {
+      width: 180px;
+  
+      &__description {
+        top: 99px;
+      }
+  
+      &__img {
+        width: 140px
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .card {
+    &__person {
+      &:nth-child(2n) {
+        margin-top: 0
+      }
+
+      &:nth-child(3n+2) {
+        margin-top: 50px
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  
+
+  .card {
+    margin-left: 20px;
+    
+    &__person {
+      width: 230px;
+  
+      &__description {
+        top: 129px;
+      }
+  
+      &__img {
+        width: 170px
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+
+    &__text {
+      margin-top: 0;
+    }
+  }
+  
+  .card {
+    margin-left: 20px;
+
+    &__person {
+      width: 313px;
+      max-width: 313px;
+  
+      &__description {
+        top: 165px;
+      }
+  
+      &__img {
+        width: 210px
+      }
+    }
+  }
+}
